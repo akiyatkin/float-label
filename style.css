@@ -2,16 +2,21 @@
 	position: relative;
 	margin-bottom: 1rem;
 }
+.like-float-label {
+	margin-bottom: 1rem;	
+}
 .float-label * {
 	width:  100%;
 }
+.float-label > select,
 .float-label > input,
 .float-label > input ~ label {
-	padding: .75rem .75rem;
-    
+	padding: .75rem .75rem;   
 }
 
+
 .float-label > input ~ label {
+	pointer-events: none;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -56,6 +61,15 @@
 	font-size: 12px;
 	color: #999;
 }
+.float-label > input[type=date]:not(:placeholder-shown) {
+	padding-top: calc(.55rem + .75rem * (2 / 3));
+}
+@-moz-document url-prefix() { 
+	.float-label > input[type=date]:not(:placeholder-shown) {
+		padding-top: calc(.75rem + .75rem * (2 / 3));
+	}
+}
+
 
 
 .float-label.icon input {
@@ -87,4 +101,7 @@
 }
 .float-label.icon.org input {
 	background-image: url('icons/org.svg');
+}
+.float-label.icon.child input {
+	background-image: url('icons/child.svg');
 }
