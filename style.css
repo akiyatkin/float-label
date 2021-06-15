@@ -4,11 +4,11 @@
 }
 .float-label * {
 	width:  100%;
-	}
-
+}
 .float-label > input,
 .float-label > input ~ label {
 	padding: .75rem .75rem;
+    
 }
 
 .float-label > input ~ label {
