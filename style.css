@@ -2,10 +2,7 @@
 	position: relative;
 	margin-bottom: 1rem;
 }
-.like-float-label {
-	margin-bottom: 1rem;	
-}
-.float-label * {
+.float-label > * {
 	width:  100%;
 }
 .float-label > select,
@@ -70,36 +67,36 @@
 	}
 }
 
-.float-label.icon input {
+.float-label.icon > input {
 	background-repeat: no-repeat;
 	background-position: 5px center;
 	padding-left:  35px;
 }
-.float-label.icon input ~ label {
+.float-label.icon > input ~ label {
 	padding-left:  35px;
 }
 
-.float-label.icon.phone input {
+.float-label.icon.phone > input {
 	background-image: url('icons/phone.svg');
 }
-.float-label.icon.name input {
+.float-label.icon.name > input {
 	background-image: url('icons/name.svg');
 }
-.float-label.icon.geo input {
+.float-label.icon.geo > input {
 	background-image: url('icons/geo.svg');
 }
-.float-label.icon.date input {
+.float-label.icon.date > input {
 	background-image: url('icons/date.svg');
 }
-.float-label.icon.plus input {
+.float-label.icon.plus > input {
 	background-image: url('icons/plus.svg');
 }
-.float-label.icon.mail input {
+.float-label.icon.mail > input {
 	background-image: url('icons/mail.svg');
 }
-.float-label.icon.org input {
+.float-label.icon.org > input {
 	background-image: url('icons/org.svg');
 }
-.float-label.icon.child input {
+.float-label.icon.child > input {
 	background-image: url('icons/child.svg');
 }
