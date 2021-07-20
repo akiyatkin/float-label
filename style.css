@@ -13,7 +13,9 @@
 .float-label > select {
 	padding: .79rem .75rem;
 }
-
+.float-label > :first-child:is(label) {
+	margin-top: 20px;
+}
 
 .float-label > input ~ label {
 	pointer-events: none;
